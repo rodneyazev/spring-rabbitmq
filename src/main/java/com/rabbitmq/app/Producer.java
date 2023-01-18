@@ -11,7 +11,7 @@ public class Producer {
 	@Autowired
     private RabbitTemplate rabbitTemplate;
 
-    @Autowired
+	@Autowired
     private Queue queue;
 
     public void send(String order) {

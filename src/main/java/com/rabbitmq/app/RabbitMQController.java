@@ -9,7 +9,7 @@ public class RabbitMQController {
 	
 	@Autowired
     private Producer producer;
-
+	
 	@GetMapping("/test")
     public String send(){
         producer.send("test message");
